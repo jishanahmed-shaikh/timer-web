@@ -1,0 +1,125 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas', monospace;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    min-height: 100vh; /* Ensures full height of viewport */
+    color: #00FF95;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #1A1A1A;
+    width: 100%;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.container {
+    width: 640px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Additional centering for inner content */
+    text-align: center;
+    flex-grow: 1;
+}
+
+.timer-frame {
+    border: 2px solid #00FF95;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.timer-display {
+    font-size: 92px;
+    font-weight: bold;
+    color: #00FF95;
+}
+
+.input-section {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+#minutes-input {
+    width: 100px;
+    font-size: 28px;
+    background-color: #1A1A1A;
+    color: #00FF95;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.minutes-text {
+    color: #00FF95;
+    font-size: 16px;
+}
+
+.button-section {
+    margin: 25px 0;
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 25px;
+    background-color: #1A1A1A;
+    color: #00FF95;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #002211;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.progress-container {
+    width: 450px;
+    height: 8px;
+    background-color: #1A1A1A;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #00FF95;
+    transition: width 1s linear;
+}
+
+/* Error state for input */
+.error {
+    background-color: #330000 !important;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #1A1A1A;
+    width: 100%; /* Ensures footer spans the width */
+}
