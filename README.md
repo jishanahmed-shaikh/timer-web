@@ -1,7 +1,7 @@
 # ⏱️ BlackMint Timer - Minimalist Countdown Timer ⚡
 
 <p align="center">
-  <img src="favicon.png" alt="BlackMint Timer Logo" width="80" height="80">
+  <img src="favicon.png" alt="BlackMint Timer Logo" width="120" height="120">
 </p>
 
 <p align="center">
