@@ -1,11 +1,28 @@
-# ![BlackMint Timer](favicon.png) BlackMint Timer
+# ⏱️ BlackMint Timer - Minimalist Countdown Timer ⚡
+
+<p align="center">
+  <img src="favicon.png" alt="BlackMint Timer Logo" width="80" height="80">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Web_Audio_API-FF6B6B?style=for-the-badge&logo=html5&logoColor=white" alt="Web Audio API">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg?style=for-the-badge" alt="Version">
+</p>
 
 A sleek, minimalist countdown timer with a retro terminal aesthetic. Perfect for productivity sessions, workouts, cooking, or any time-based activities.
 
 ## ✨ Features
 
 - **Clean Interface**: Minimalist design with a retro green-on-black terminal theme
-- **Audio Feedback**: 
+- **Audio Feedback**:
   - Timer set confirmation sound
   - Continuous digital timer sound during countdown
   - Time-up notification sound
@@ -17,6 +34,7 @@ A sleek, minimalist countdown timer with a retro terminal aesthetic. Perfect for
 ## 🎵 Audio Experience
 
 The timer includes three distinct audio cues:
+
 - **Timer Set**: Confirmation sound when starting a timer
 - **Digital Sound**: Continuous looping timer sound during countdown (pauses with timer)
 - **Time Up**: Alert sound when timer completes
