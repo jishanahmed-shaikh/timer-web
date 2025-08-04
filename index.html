@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
+
 <body>
     <header>
         <h1 class="title">BlackMint Timer</h1>
@@ -16,7 +18,7 @@
         <div class="timer-frame">
             <div class="timer-display">00:00</div>
         </div>
-        
+
         <div class="input-section">
             <input type="number" id="minutes-input" placeholder="0" min="0">
             <span class="minutes-text">minutes</span>
@@ -34,12 +36,15 @@
     </div>
 
     <footer>
-        <p>&copy; Black Mint Timer by <a href ="https://linktr.ee/jishanahmedshaikh" target="_blank">Jishanahmed AR Shaikh</a></p>
+        <p>&copy; Black Mint Timer by <a href="https://linktr.ee/jishanahmedshaikh" target="_blank">Jishanahmed AR
+                Shaikh</a></p>
     </footer>
-    
+
     <audio id="timer-set-sound" src="timer-set.mp3"></audio>
     <audio id="time-up-sound" src="time-up.mp3"></audio>
-    
+    <audio id="digital-sound" src="digital.mp3" loop></audio>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

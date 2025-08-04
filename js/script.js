@@ -8,6 +8,7 @@ class TimerApp {
         this.progressBar = document.querySelector('.progress-bar');
         this.timerSetSound = document.getElementById('timer-set-sound');
         this.timeUpSound = document.getElementById('time-up-sound');
+        this.digitalSound = document.getElementById('digital-sound');
 
         this.isRunning = false;
         this.isPaused = false;
@@ -40,6 +41,7 @@ class TimerApp {
         this.isPaused = false;
 
         this.timerSetSound.play();
+        this.digitalSound.play();
         this.updateButtonStates();
         this.minutesInput.disabled = true;
         
@@ -71,10 +73,18 @@ class TimerApp {
     pauseResumeTimer() {
         this.isPaused = !this.isPaused;
         this.pauseBtn.textContent = this.isPaused ? 'RESUME' : 'PAUSE';
+        
+        if (this.isPaused) {
+            this.digitalSound.pause();
+        } else {
+            this.digitalSound.play();
+        }
     }
 
     resetTimer() {
         if (this.timerId) clearInterval(this.timerId);
+        this.digitalSound.pause();
+        this.digitalSound.currentTime = 0;
         this.isRunning = false;
         this.isPaused = false;
         this.remainingTime = 0;
@@ -115,6 +125,8 @@ class TimerApp {
     }
 
     timerComplete() {
+        this.digitalSound.pause();
+        this.digitalSound.currentTime = 0;
         this.timeUpSound.play();
         this.resetTimer();
     }
